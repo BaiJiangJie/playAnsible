@@ -1,0 +1,12 @@
+- hosts: web1
+  tasks:
+    - name: Ping host
+      ping:
+
+    - name: Change user root password
+      user:
+        name: root
+        password: $6$TCw.7ziXlw0aJIDH$OwBG43UHtEp3qLW7S/X3xBgR3/BvCIODqI2bv0wyEz.jMNr4AQ39Ew1APmrguUKOq4YHK7bmasdflM1uNa/I0.
+        update_password: always
+  
+   

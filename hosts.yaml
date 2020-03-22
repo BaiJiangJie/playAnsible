@@ -1,0 +1,17 @@
+web1:
+  hosts:
+    centos:
+      ansible_port: 9001
+      ansible_host: localhost
+      ansible_user: root
+      ansible_password: root
+      ansible_ssh_private_key_file: /Users/bai/.ssh/id_rsa
+
+
+web2:
+  hosts:
+    centos2:
+      ansible_port: 9001
+      ansible_host: localhost
+      ansible_user: bai
+      ansible_password: bai
