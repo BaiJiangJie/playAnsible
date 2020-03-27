@@ -1,0 +1,30 @@
+- hosts: centos4
+  tasks:
+    - name: Ping host
+      ping:
+        data: ko lo oo ol ok
+
+    - name: Create user bai
+      user:
+        name: bai
+        password: $6$70MhBlarsQ3OmczP$UFM3UpNVRgm/Tu3EOQtZh3UaaHuQuIslZG7.sRBp1un8X/FPCtcEsjTuMpSNUIHJaHPpQCRK2QWDOYvXCw78j/
+        update_password: always
+  
+    - name: Create user jiang
+      user:
+        name: jiang
+        password: $6$70MhBlarsQ3OmczP$UFM3UpNVRgm/Tu3EOQtZh3UaaHuQuIslZG7.sRBp1un8X/FPCtcEsjTuMpSNUIHJaHPpQCRK2QWDOYvXCw78j/
+        update_password: always
+
+    - name: Create disable user jie
+      user:
+        name: jie
+        password: "*"
+        update_password: always
+
+    - name: Create disable user xiaobai
+      user:
+        name: xiaobai
+        password: "!"
+        update_password: always
+   

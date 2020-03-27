@@ -1,17 +1,31 @@
-web1:
+windows:
   hosts:
-    centos:
+    windows1:
+      ansible_port: 3390
+      ansible_host: 
+      ansible_user: administrator
+      ansible_password: 
+      ansible_shell_type: cmd
+
+cenots:
+  hosts:
+    centos1:
       ansible_port: 9001
       ansible_host: localhost
       ansible_user: root
       ansible_password: root
-      ansible_ssh_private_key_file: /Users/bai/.ssh/id_rsa
-
-
-web2:
-  hosts:
     centos2:
-      ansible_port: 9001
+      ansible_port: 9002
       ansible_host: localhost
-      ansible_user: bai
-      ansible_password: bai
+      ansible_user: root
+      ansible_password: root
+    centos3:
+      ansible_port: 9003
+      ansible_host: localhost
+      ansible_user: root
+      ansible_password: root
+    centos4:
+      ansible_port: 9004
+      ansible_host: localhost
+      ansible_user: root
+      ansible_password: root

@@ -1,0 +1,13 @@
+- hosts: windows1
+  tasks:
+    - name: Ping host
+      win_ping:
+        data: ko lo oo ol ok
+
+    - name: Change user administrator password
+      win_user:
+        name: 
+        password: 
+        update_password: always
+  
+   
